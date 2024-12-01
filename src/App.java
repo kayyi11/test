@@ -26,7 +26,7 @@ public class App {
     }
 
     public static boolean isPP(int num) {
-        return isPrime(num) && isPalindrome(num);
+        return isPrime(num);
     }
     
     //Emirp
@@ -53,16 +53,7 @@ public class App {
         return true;
     }
 
-    //Palindrome
-    public static boolean isPalindrome(int num) {
-        int original = num, reverse = 0;
-        while (num > 0) {
-            int digit = num % 10;
-            reverse = reverse * 10 + digit;
-            num /= 10;
-        }
-        return original == reverse;
-    }
+    
     
 
 }
